@@ -35,75 +35,10 @@
       margin-bottom: 20px;
     }
 
-    .typing {
-      color: #38bdf8;
-      border-right: 3px solid #38bdf8;
-      white-space: nowrap;
-      overflow: hidden;
-      width: 0;
-      animation: typing 4s steps(40, end) infinite,
-                 blink 0.8s infinite;
-    }
-
-    p {
-      margin-top: 20px;
-      font-size: 1.1rem;
-      line-height: 1.8;
-      color: #cbd5e1;
-    }
-
-    .loader {
-      margin: 30px auto;
-      width: 70%;
-      height: 10px;
-      background: #1e293b;
-      border-radius: 20px;
-      overflow: hidden;
-    }
-
-    .loader span {
-      display: block;
-      height: 100%;
-      width: 40%;
-      background: #38bdf8;
-      animation: load 2s infinite;
-      border-radius: 20px;
-    }
-
     .footer {
       margin-top: 30px;
       font-size: 0.9rem;
       color: #94a3b8;
-    }
-
-    @keyframes typing {
-      0% { width: 0 }
-      50% { width: 100% }
-      100% { width: 0 }
-    }
-
-    @keyframes blink {
-      50% { border-color: transparent }
-    }
-
-    @keyframes load {
-      0% {
-        transform: translateX(-100%);
-      }
-      100% {
-        transform: translateX(250%);
-      }
-    }
-
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
     }
 
     .emoji {
@@ -120,23 +55,6 @@
     <div class="emoji">🚧👨‍💻☕</div>
 
     <h1>Portfolio Under Construction</h1>
-
-    <h2 class="typing">
-      Arsh is cooking something legendary...
-    </h2>
-
-    <div class="loader">
-      <span></span>
-    </div>
-
-    <p>
-      Meanwhile...<br><br>
-
-      Bugs are being fixed 🐛<br>
-      Coffee is being consumed ☕<br>
-      Stack Overflow is being worshipped 🙏<br>
-      And CSS is still not centering properly 😭
-    </p>
 
     <div class="footer">
       © 2026 Arsh Kumar • Coming Soon
