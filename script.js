@@ -59,7 +59,7 @@ window.addEventListener("DOMContentLoaded", () => {
         console.log("Rendering Repo:", repo.name);
 
         // preview image
-        const previewImage = `https://raw.githubusercontent.com/${username}/${repo.name}/main/preview.png?${new Date().getTime()}`;
+        const previewImage = `https://raw.githubusercontent.com/${username}/${repo.name}/main/preview.png?v=${Date.now()}`;
 
         const card = document.createElement("div");
 
@@ -72,6 +72,7 @@ window.addEventListener("DOMContentLoaded", () => {
             <img
                 src="${previewImage}"
                 alt="${repo.name}"
+                loading="lazy"
                 onerror="
                     this.onerror=null;
                     this.src='https://placehold.co/600x400?text=No+Preview';
