@@ -47,21 +47,36 @@ window.addEventListener("DOMContentLoaded", () => {
         console.log("No public repos found");
 
         fallbackProject.style.display = "block";
+
         return;
       }
 
+      // hide fallback
       fallbackProject.style.display = "none";
 
+      // render repos
       filteredRepos.forEach((repo) => {
         console.log("Rendering Repo:", repo.name);
+
+        // preview image
+        const previewImage = `
+https://raw.githubusercontent.com/${username}/${repo.name}/main/preview.png
+`;
 
         const card = document.createElement("div");
 
         card.className = "project-card";
 
         card.innerHTML = `
+
           <div class="project-top">
-            ${repo.name}
+
+            <img
+              src="${previewImage}"
+              alt="${repo.name}"
+              onerror="this.src='https://placehold.co/600x400?text=No+Preview'"
+            >
+
           </div>
 
           <div class="project-info">
@@ -77,6 +92,7 @@ window.addEventListener("DOMContentLoaded", () => {
             </a>
 
           </div>
+
         `;
 
         projectsGrid.appendChild(card);
