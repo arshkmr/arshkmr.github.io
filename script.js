@@ -59,9 +59,7 @@ window.addEventListener("DOMContentLoaded", () => {
         console.log("Rendering Repo:", repo.name);
 
         // preview image
-        const previewImage = `
-https://raw.githubusercontent.com/${username}/${repo.name}/main/preview.png?v=${Date.now()}
-`;
+        const previewImage = `https://raw.githubusercontent.com/${username}/${repo.name}/main/preview.png?${new Date().getTime()}`;
 
         const card = document.createElement("div");
 
@@ -72,9 +70,12 @@ https://raw.githubusercontent.com/${username}/${repo.name}/main/preview.png?v=${
           <div class="project-top">
 
             <img
-              src="${previewImage}"
-              alt="${repo.name}"
-              onerror="this.src='https://placehold.co/600x400?text=No+Preview'"
+                src="${previewImage}"
+                alt="${repo.name}"
+                onerror="
+                    this.onerror=null;
+                    this.src='https://placehold.co/600x400?text=No+Preview';
+                "
             >
 
           </div>
