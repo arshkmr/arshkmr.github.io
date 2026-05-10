@@ -86,7 +86,10 @@
       </div>
 
       <div class="about-container">
-        <img src="../static/Profile.png" alt="Arsh Kumar" />
+        <!-- Image Box -->
+        <div class="about-image">
+          <img src="../static/Profile 2.png" alt="Arsh Kumar" />
+        </div>
 
         <div class="about-content">
           <p>I'm Arsh Kumar, a Full-Stack Developer passionate about building robust, scalable, and high-performance web applications. I love turning ideas into real-world digital products with clean code and modern technologies.</p>
@@ -145,35 +148,19 @@
         <span>Projects</span>
       </div>
 
-      <div class="projects-grid">
-        <div class="project-card">
-          <div class="project-image">Coming Soon</div>
+      <!-- Dynamic GitHub Projects -->
+      <div class="projects-grid" id="projectsGrid">
+        <!-- Default Fallback Card -->
+        <div class="empty-project-card" id="fallbackProject">
+          <div class="empty-icon">🗁</div>
 
-          <div class="project-content">
-            <h3>Future Project</h3>
+          <h2>Projects coming soon...</h2>
 
-            <p>New projects will be added here soon as I continue building and shipping applications.</p>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-image">Coming Soon</div>
-
-          <div class="project-content">
-            <h3>Upcoming Website</h3>
-
-            <p>Exciting full-stack and frontend projects are currently under development.</p>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-image">Coming Soon</div>
-
-          <div class="project-content">
-            <h3>More Projects</h3>
-
-            <p>More real-world applications and portfolio projects will appear here soon.</p>
-          </div>
+          <p>
+            I'm currently working on some exciting projects.
+            <br />
+            Stay tuned — they'll be live here soon!
+          </p>
         </div>
       </div>
     </section>
@@ -206,5 +193,7 @@
       © 2026 All rights reserved
       <span>Arsh Kumar.</span>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
