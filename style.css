@@ -452,10 +452,9 @@ section {
 }
 
 .projects-grid {
-  margin-top: 70px;
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
 }
 
