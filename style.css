@@ -1,3 +1,91 @@
+/* ================= UNDER CONSTRUCTION ================= */
+
+.construction-page{
+  min-height:100vh;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  text-align:center;
+}
+
+.construction-container{
+  max-width:700px;
+  padding:40px;
+}
+
+.construction-emoji{
+  font-size:70px;
+  margin-bottom:20px;
+
+  animation:float 3s ease-in-out infinite;
+}
+
+.construction-title{
+  font-size:60px;
+  line-height:1.2;
+  margin-bottom:25px;
+}
+
+.construction-subtitle{
+  font-size:20px;
+  color:#666;
+  line-height:1.8;
+  margin-bottom:40px;
+}
+
+.construction-footer{
+  margin-top:60px;
+  color:#777;
+}
+
+/* FLOAT ANIMATION */
+
+@keyframes float{
+
+  0%{
+    transform:translateY(0);
+  }
+
+  50%{
+    transform:translateY(-10px);
+  }
+
+  100%{
+    transform:translateY(0);
+  }
+
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+  .construction-title{
+    font-size:42px;
+  }
+
+  .construction-subtitle{
+    font-size:17px;
+  }
+
+}
+
+@media(max-width:480px){
+
+  .construction-title{
+    font-size:32px;
+  }
+
+  .construction-subtitle{
+    font-size:15px;
+  }
+
+}
+
+/* ================================================================================ */
+
 * {
   margin: 0;
   padding: 0;
