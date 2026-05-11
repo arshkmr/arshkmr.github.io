@@ -2,16 +2,34 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arsh Kumar</title>
+
+    <style>
+      body {
+        margin: 0;
+      }
+      
+      iframe {
+        width: 100%;
+        height: 100vh;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <iframe id="frame"></iframe>
 
     <script>
-      const LIVE = false
+      const live = true
       
-      if (LIVE) {
-        window.location.replace('./portfolio/')
+      const frame = document.getElementById('frame')
+      
+      if (live) {
+        frame.src = 'portfolio/'
       } else {
-        window.location.replace('./under-construction/')
+        frame.src = 'under-construction/'
       }
     </script>
-  </head>
-  <body></body>
+  </body>
 </html>
