@@ -60,7 +60,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
         // preview image
         const previewImage = `
-https://raw.githubusercontent.com/${username}/${repo.name}/main/preview.png
+https://raw.githubusercontent.com/${username}/${repo.name}/main/preview.jpg
 `;
 
         const card = document.createElement("div");
