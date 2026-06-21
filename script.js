@@ -61,9 +61,6 @@ window.addEventListener("DOMContentLoaded", () => {
 
         card.className = "project-card";
 
-        const deployedUrl =
-          repo.homepage || `https://${username}.github.io/${repo.name}/`;
-
         card.innerHTML = `
           <div class="project-top">
             <img
@@ -100,15 +97,9 @@ window.addEventListener("DOMContentLoaded", () => {
               ${repo.description || "New project uploaded on GitHub."}
             </p>
 
-            <div class="project-links">
-              <a href="${deployedUrl}" target="_blank" rel="noopener noreferrer">
-                Live Demo
-              </a>
-
-              <a href="${repo.html_url}" target="_blank" rel="noopener noreferrer">
-                GitHub Repo
-              </a>
-            </div>
+            <a href="${repo.html_url}" target="_blank" rel="noopener noreferrer">
+              View Project
+            </a>
           </div>
         `;
 
